@@ -1,0 +1,85 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c3eef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body::before {
+  content: "";
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  max-width: 530px;
+  margin: 0 auto;
+}
+.container .todo-parent {
+  height: 600px;
+  padding: 20px;
+  margin: 30px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.1);
+}
+.container .header {
+  text-align: center;
+}
+.container .header h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.container .header .input-section {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.container .header .input-section input {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: none;
+  padding: 10px;
+  text-indent: 10px;
+}
+.container .header .input-section button {
+  width: 30%;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.container .body-section ul {
+  margin-top: 30px;
+}
+.container .body-section li {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.23);
+}
+.container .body-section li .todo-item {
+  width: 100%;
+  max-width: 300px;
+}
